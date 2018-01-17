@@ -1,5 +1,5 @@
 # caffe-spn
-Codes for Learning Affinity via Spatial Propagation Networks
+Codes for [Learning Affinity via Spatial Propagation Networks]{https://papers.nips.cc/paper/6750-learning-affinity-via-spatial-propagation-networks.pdf}
 
 
 Integrating SPN into your own caffe:
