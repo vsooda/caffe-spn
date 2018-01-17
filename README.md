@@ -1,4 +1,14 @@
-# Installation
+
+# SPN: Learning Affinity via Spatial Propagation Network
+
+## License
+
+Copyright (C) 2018 NVIDIA Corporation.  All rights reserved.
+Licensed under the CC BY-NC-SA 4.0 license (https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode). 
+
+
+## Installation
+
 The codes for [Learning Affinity via Spatial Propagation Networks](https://papers.nips.cc/paper/6750-learning-affinity-via-spatial-propagation-networks.pdf) is based on [CAFFE](http://caffe.berkeleyvision.org/). To install, 
 
 $cd caffe-dev 
@@ -10,7 +20,8 @@ $make all -j
 $make pycaffe
 
 
-# SPN layer and integration
+## SPN layer and integration
+
 If you need to integrate the SPN layer into your own caffe, do the following steps and rebuild:
 
 1. copying "caffe-dev/src/caffe/layers/gaterecurrent2dnoind_layer.cpp", "caffe-dev/src/caffe/layers/gaterecurrent2dnoind_layer.cu" into "<your caffe root>/src/caffe/layers".
@@ -38,5 +49,6 @@ If you need to integrate the SPN layer into your own caffe, do the following ste
         }
     or searching "caffe-dev/src/caffe/proto/caffe.proto" for details.
 
-# Pytorch ext for spn layer
+## Pytorch ext for spn layer
+
 We develop the spn layer ext for pytorch [HERE](https://github.com/Liusifei/pytorch_spn.git). Note that we did not re-implement the vision tasks in the paper on pytorch yet. However, you are encouraged to apply this module to any vision tasks you are working on.
