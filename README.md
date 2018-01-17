@@ -12,7 +12,9 @@ Integrating SPN into your own caffe:
 
 	a. "optional GateRecurrent2dnoindParameter gaterecurrent2dnoind_param = <next avaliable id>;" under message LayerParameter;
 	
-    b. message GateRecurrent2dnoindParameter {
+    b. add the following to your caffe.proto:
+    
+    	message GateRecurrent2dnoindParameter {
             optional uint32 num_output = 1 [default = 16]; 
             optional bool horizontal = 16 [default = true];
             optional bool reverse = 17 [default = false]; //recurrent direction
