@@ -47,7 +47,6 @@ class AgRcProbVOCDataLayer(caffe.Layer):
         self.split = params['split']
         self.mean = np.array(params['mean'])
         self.random = params.get('randomize', True)
-        self.seed = params.get('seed', None)
         self.shape = np.array(params['shape'])
         self.patch_num = np.array(params['patch_num'])
         self.sample_size = self.shape[0] / self.patch_num
@@ -66,15 +65,12 @@ class AgRcProbVOCDataLayer(caffe.Layer):
         self.indices = open(split_f, 'r').read().splitlines()
         self.idx = np.array(range(self.sample_size))
 
-        # make eval deterministic
         if 'train' not in self.split:
             self.random = False
             for id in range(len(self.idx)):
                 self.idx[id] = id
 
-        # randomization: seed and pick
         if self.random:
-            random.seed(self.seed)
             for id in range(len(self.idx)):
                 self.idx[id] = random.randint(0, len(self.indices)-1)
 
