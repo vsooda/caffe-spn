@@ -38,5 +38,5 @@ If you need to integrate the SPN layer into your own caffe, do the following ste
         }
     or searching "caffe-dev/src/caffe/proto/caffe.proto" for details.
 
-# pytorch ext for spn layer
+# Pytorch ext for spn layer
 We develop the spn layer ext for pytorch [HERE](https://github.com/Liusifei/pytorch_spn.git). Note that we did not re-implement the vision tasks in the paper on pytorch yet. However, you are encouraged to apply this module to any vision tasks you are working on.
