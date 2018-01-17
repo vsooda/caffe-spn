@@ -6,10 +6,11 @@ $cd caffe-dev
 and then follow the [Installation](http://caffe.berkeleyvision.org/installation.html) to install all neccesary dependencies, then 
 
 $make all -j
-$make pycaffe.
+
+$make pycaffe
 
 
-Integrating SPN into your own caffe:
+If you need to integrate the SPN layer into your own caffe, do the following steps and rebuild:
 
 1. copying "caffe-dev/src/caffe/layers/gaterecurrent2dnoind_layer.cpp", "caffe-dev/src/caffe/layers/gaterecurrent2dnoind_layer.cu" into "<your caffe root>/src/caffe/layers".
 
