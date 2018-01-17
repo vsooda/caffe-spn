@@ -1,4 +1,4 @@
-# caffe-spn
+# Installation
 The codes for [Learning Affinity via Spatial Propagation Networks](https://papers.nips.cc/paper/6750-learning-affinity-via-spatial-propagation-networks.pdf) is based on [CAFFE](http://caffe.berkeleyvision.org/). To install, 
 
 $cd caffe-dev 
@@ -10,6 +10,7 @@ $make all -j
 $make pycaffe
 
 
+# SPN layer integration
 If you need to integrate the SPN layer into your own caffe, do the following steps and rebuild:
 
 1. copying "caffe-dev/src/caffe/layers/gaterecurrent2dnoind_layer.cpp", "caffe-dev/src/caffe/layers/gaterecurrent2dnoind_layer.cu" into "<your caffe root>/src/caffe/layers".
