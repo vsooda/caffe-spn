@@ -19,7 +19,7 @@ If you need to integrate the SPN layer into your own caffe, do the following ste
 
 3. open "<your caffe root>/src/caffe/proto/caffe.proto", add:
 
-	a. "optional GateRecurrent2dnoindParameter gaterecurrent2dnoind_param = <next avaliable id>;" under message LayerParameter;
+	a. "optional GateRecurrent2dnoindParameter gaterecurrent2dnoind_param = \<next avaliable id\>;" under message LayerParameter;
 	
     b. add the following to your caffe.proto:
     
