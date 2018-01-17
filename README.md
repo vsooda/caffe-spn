@@ -1,5 +1,12 @@
 # caffe-spn
-The codes for [Learning Affinity via Spatial Propagation Networks](https://papers.nips.cc/paper/6750-learning-affinity-via-spatial-propagation-networks.pdf) is based on [CAFFE](http://caffe.berkeleyvision.org/). To install, $cd caffe-dev, and then follow the [Installation](http://caffe.berkeleyvision.org/installation.html) to install all neccesary dependencies, then $make all -j, $make pycaffe.
+The codes for [Learning Affinity via Spatial Propagation Networks](https://papers.nips.cc/paper/6750-learning-affinity-via-spatial-propagation-networks.pdf) is based on [CAFFE](http://caffe.berkeleyvision.org/). To install, 
+
+$cd caffe-dev 
+
+and then follow the [Installation](http://caffe.berkeleyvision.org/installation.html) to install all neccesary dependencies, then 
+
+$make all -j
+$make pycaffe.
 
 
 Integrating SPN into your own caffe:
