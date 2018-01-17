@@ -3,7 +3,6 @@ import numpy as np
 import scipy.io
 import math
 import os
-from PIL import Image
 import sys
 sys.path.append("..")
 sys.path.append("../pylayers")
